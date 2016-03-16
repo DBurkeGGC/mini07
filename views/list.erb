@@ -1,0 +1,22 @@
+<h1>Customer List</h1>
+<table>
+ <col width="200">
+ <col width="150">
+ <col width="650">
+ <tr>
+   <td><u><b>E-MAIL</b></u></td>
+   <td><u><b>NAME</b></u></td>
+   <td><u><b>COMMENT</b></u></td>
+ </tr>
+<% @links.each do |link| %>
+ <tr>
+   <td><%= link.email %></td>
+   <td><%= link.name %></td>
+   <td><%= link.comment %></td>
+ </tr>
+<% end %>
+</table>
+
+<p><a href="/create">Add Customer</a></p>
+<p><a href="/destroy">Clear List [DEMO FEATURE]</a></p>
+<p><a href="/">Home</a></p>
